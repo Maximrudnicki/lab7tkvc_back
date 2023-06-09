@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
+    "https://lab7-tkvc-front.onrender.com/",
     "http://localhost",
     "http://localhost:8080",
     "http://127.0.0.1:8080",
