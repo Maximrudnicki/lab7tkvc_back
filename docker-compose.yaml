@@ -1,0 +1,19 @@
+version: '3'
+services:
+  lab6-tkvc-back:
+    image: django-tkvc-lab5
+    ports:
+      - 8000:8000
+    networks:
+      - lab6-tkvc-network
+
+  lab6-tkvc-front:
+    image: vue-tkvc-lab5
+    ports:
+      - 80:80
+    networks:
+      - lab6-tkvc-network
+
+networks:
+  lab6-tkvc-network:
+    driver: bridge
