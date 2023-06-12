@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*mi75x56r+md2(+!%565siurdwjna6o(2w+zng5wwel50pq*(&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['lab7-tkvc-back.onrender.com']
 
 
 # Application definition
@@ -47,19 +47,19 @@ INSTALLED_APPS = [
     'order',
 ]
 
-CORS_ALLOWED_ORIGINS = ['*']
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOWED_ORIGINS = ['*']
+# CORS_ALLOW_ALL_ORIGINS = True
 
-# CORS_ALLOWED_ORIGINS = [
-#     "https://lab7-tkvc-front.onrender.com",
-#     "http://localhost",
-#     "http://localhost:8080",
-#     "http://127.0.0.1:8080",
-#     "http://localhost:8081",
-#     "http://127.0.0.1:8081",
-#     "http://localhost:8082",
-#     "http://127.0.0.1:8082",
-# ]
+CORS_ALLOWED_ORIGINS = [
+    "https://lab7-tkvc-front.onrender.com",
+    "http://localhost",
+    "http://localhost:8080",
+    "http://127.0.0.1:8080",
+    "http://localhost:8081",
+    "http://127.0.0.1:8081",
+    "http://localhost:8082",
+    "http://127.0.0.1:8082",
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
